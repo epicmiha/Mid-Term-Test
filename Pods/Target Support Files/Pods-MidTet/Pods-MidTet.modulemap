@@ -1,0 +1,6 @@
+framework module Pods_MidTet {
+  umbrella header "Pods-MidTet-umbrella.h"
+
+  export *
+  module * { export * }
+}
