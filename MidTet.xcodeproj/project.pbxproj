@@ -12,9 +12,13 @@
 		3F4CB3E41E5D0A1400CB8A69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F4CB3E21E5D0A1400CB8A69 /* Main.storyboard */; };
 		3F4CB3E61E5D0A1400CB8A69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F4CB3E51E5D0A1400CB8A69 /* Assets.xcassets */; };
 		3F4CB3E91E5D0A1400CB8A69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F4CB3E71E5D0A1400CB8A69 /* LaunchScreen.storyboard */; };
+		3F4CB3F31E5D194200CB8A69 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CB3F21E5D194200CB8A69 /* LoginViewController.swift */; };
+		3F4CB3F71E5D20A600CB8A69 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F4CB3F61E5D20A600CB8A69 /* GoogleService-Info.plist */; };
+		6C8AA5FF8B444B978C12B370 /* Pods_MidTet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6ACF4FDB24F416C284300F /* Pods_MidTet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B6ACF4FDB24F416C284300F /* Pods_MidTet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MidTet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F4CB3DB1E5D0A1300CB8A69 /* MidTet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidTet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F4CB3DE1E5D0A1300CB8A69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F4CB3E01E5D0A1400CB8A69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		3F4CB3E51E5D0A1400CB8A69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F4CB3E81E5D0A1400CB8A69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F4CB3EA1E5D0A1400CB8A69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F4CB3F21E5D194200CB8A69 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3F4CB3F61E5D20A600CB8A69 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5755DAF2B8840FFFDEECD242 /* Pods-MidTet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MidTet.release.xcconfig"; path = "Pods/Target Support Files/Pods-MidTet/Pods-MidTet.release.xcconfig"; sourceTree = "<group>"; };
+		ECA75539874B22D00CF533A1 /* Pods-MidTet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MidTet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MidTet/Pods-MidTet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C8AA5FF8B444B978C12B370 /* Pods_MidTet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21603289BDC5BE7ABEDB1CB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECA75539874B22D00CF533A1 /* Pods-MidTet.debug.xcconfig */,
+				5755DAF2B8840FFFDEECD242 /* Pods-MidTet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3F4CB3D21E5D0A1300CB8A69 = {
 			isa = PBXGroup;
 			children = (
 				3F4CB3DD1E5D0A1300CB8A69 /* MidTet */,
 				3F4CB3DC1E5D0A1300CB8A69 /* Products */,
+				21603289BDC5BE7ABEDB1CB7 /* Pods */,
+				F70AA59C0471F80F068E63CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +77,21 @@
 				3F4CB3DE1E5D0A1300CB8A69 /* AppDelegate.swift */,
 				3F4CB3E01E5D0A1400CB8A69 /* ViewController.swift */,
 				3F4CB3E21E5D0A1400CB8A69 /* Main.storyboard */,
+				3F4CB3F21E5D194200CB8A69 /* LoginViewController.swift */,
+				3F4CB3F61E5D20A600CB8A69 /* GoogleService-Info.plist */,
 				3F4CB3E51E5D0A1400CB8A69 /* Assets.xcassets */,
 				3F4CB3E71E5D0A1400CB8A69 /* LaunchScreen.storyboard */,
 				3F4CB3EA1E5D0A1400CB8A69 /* Info.plist */,
 			);
 			path = MidTet;
+			sourceTree = "<group>";
+		};
+		F70AA59C0471F80F068E63CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B6ACF4FDB24F416C284300F /* Pods_MidTet.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F4CB3ED1E5D0A1400CB8A69 /* Build configuration list for PBXNativeTarget "MidTet" */;
 			buildPhases = (
+				38A11515AC5C5E6A9DE36208 /* [CP] Check Pods Manifest.lock */,
 				3F4CB3D71E5D0A1300CB8A69 /* Sources */,
 				3F4CB3D81E5D0A1300CB8A69 /* Frameworks */,
 				3F4CB3D91E5D0A1300CB8A69 /* Resources */,
+				DA21DDE02CC2A35424B06178 /* [CP] Embed Pods Frameworks */,
+				C4E21761BE3A9D882B8BDE21 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F4CB3E91E5D0A1400CB8A69 /* LaunchScreen.storyboard in Resources */,
+				3F4CB3F71E5D20A600CB8A69 /* GoogleService-Info.plist in Resources */,
 				3F4CB3E61E5D0A1400CB8A69 /* Assets.xcassets in Resources */,
 				3F4CB3E41E5D0A1400CB8A69 /* Main.storyboard in Resources */,
 			);
@@ -131,11 +165,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		38A11515AC5C5E6A9DE36208 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4E21761BE3A9D882B8BDE21 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MidTet/Pods-MidTet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA21DDE02CC2A35424B06178 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MidTet/Pods-MidTet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F4CB3D71E5D0A1300CB8A69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F4CB3F31E5D194200CB8A69 /* LoginViewController.swift in Sources */,
 				3F4CB3E11E5D0A1400CB8A69 /* ViewController.swift in Sources */,
 				3F4CB3DF1E5D0A1400CB8A69 /* AppDelegate.swift in Sources */,
 			);
@@ -256,6 +339,7 @@
 		};
 		3F4CB3EE1E5D0A1400CB8A69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECA75539874B22D00CF533A1 /* Pods-MidTet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MidTet/Info.plist;
@@ -268,6 +352,7 @@
 		};
 		3F4CB3EF1E5D0A1400CB8A69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5755DAF2B8840FFFDEECD242 /* Pods-MidTet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MidTet/Info.plist;
@@ -297,6 +382,7 @@
 				3F4CB3EF1E5D0A1400CB8A69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
