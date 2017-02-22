@@ -4,7 +4,7 @@
 //
 //  Created by Student on 2017-02-21.
 //  Copyright © 2017 MAPD114. All rights reserved.
-//
+//  Mykhailo Obelchak 300907244
 
 import UIKit
 import FirebaseAuth

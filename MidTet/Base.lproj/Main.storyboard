@@ -122,7 +122,7 @@
         <!--List View Controller-->
         <scene sceneID="o2x-Fq-pev">
             <objects>
-                <viewController id="qV2-0o-3LQ" customClass="ListViewController" customModule="MidTet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qV2-0o-3LQ" customClass="ListViewController" customModule="MidTet" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TRn-75-mSn"/>
                         <viewControllerLayoutGuide type="bottom" id="FaR-w3-JpV"/>
@@ -159,9 +159,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PY-fL-5Q5">
                                                     <rect key="frame" x="307" y="0.0" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Add">
-                                                        <color key="titleColor" red="1" green="0.87221063779999997" blue="0.34638913519999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </state>
+                                                    <state key="normal" title="Add"/>
                                                 </button>
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="vYn-aG-5wB">
                                                     <rect key="frame" x="262" y="149" width="94" height="29"/>
@@ -213,8 +211,6 @@
                             </tableViewCell>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FN-B7-G81">
                                 <rect key="frame" x="163" y="585" width="49" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.87221063779999997" blue="0.34638913519999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="1" green="0.87221063779999997" blue="0.34638913519999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" red="0.076079842930000002" green="0.076079842930000002" blue="0.076079842930000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -234,19 +230,11 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="wFI-Xq-HHC">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="8CA-yB-sHC">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xU1-hf-aNl">
-                                <rect key="frame" x="16" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="LogOut"/>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="wFI-Xq-HHC"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="clearBtn" destination="0FN-B7-G81" id="Fpm-M2-7Yz"/>
                         <outlet property="table" destination="8j7-Gf-aos" id="2nL-z6-bQR"/>
+                        <outlet property="tableView" destination="8j7-Gf-aos" id="Nqh-A1-rQv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ezM-UR-4z1" userLabel="First Responder" sceneMemberID="firstResponder"/>
